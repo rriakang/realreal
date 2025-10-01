@@ -1,0 +1,98 @@
+_wandb:
+    value:
+        cli_version: 0.22.0
+        e:
+            07e6yjpw64aayaa3a48u8ixa0ziv85y2:
+                codePath: client_main.py
+                codePathLocal: client_main.py
+                cpu_count: 18
+                cpu_count_logical: 36
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "1967317549056"
+                        used: "1289037819904"
+                email: rirakang@gachon.ac.kr
+                executable: /home/ccl/anaconda3/envs/rrhypo/bin/python
+                git:
+                    commit: 2ab573b1832a6eeb14f615becaad854b294fbe1e
+                    remote: https://github.com/rriakang/realreal.git
+                gpu: NVIDIA GeForce RTX 3070 Ti
+                gpu_count: 2
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6144
+                      memoryTotal: "8589934592"
+                      name: NVIDIA GeForce RTX 3070 Ti
+                      uuid: GPU-41699f34-baf7-0393-e3d5-f78c5a67928e
+                    - architecture: Ampere
+                      cudaCores: 6144
+                      memoryTotal: "8589934592"
+                      name: NVIDIA GeForce RTX 3070 Ti
+                      uuid: GPU-a58b43bb-080c-cea6-1128-f4a7f0750efb
+                host: ccl-y-server
+                memory:
+                    total: "134724751360"
+                os: Linux-5.15.0-139-generic-x86_64-with-glibc2.31
+                program: /home/ccl/Desktop/rirakang/realreal/client_main.py
+                python: CPython 3.9.23
+                root: /home/ccl/Desktop/rirakang/realreal
+                startedAt: "2025-10-01T08:37:10.714516Z"
+                writerId: 07e6yjpw64aayaa3a48u8ixa0ziv85y2
+        m: []
+        python_version: 3.9.23
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 30
+                - 35
+                - 41
+                - 49
+                - 50
+                - 53
+                - 71
+                - 98
+            "2":
+                - 1
+                - 5
+                - 11
+                - 30
+                - 35
+                - 41
+                - 49
+                - 50
+                - 53
+                - 71
+                - 98
+            "3":
+                - 2
+                - 13
+                - 16
+                - 61
+            "4": 3.9.23
+            "5": 0.22.0
+            "6": 4.43.1
+            "12": 0.22.0
+            "13": linux-x86_64
+batch_size:
+    value: 8
+dataset:
+    value: MNIST
+epochs:
+    value: 3
+hp_batch_size:
+    value: 8
+hp_learning_rate:
+    value: 0.005311879573392109
+hp_local_epochs:
+    value: 3
+learning_rate:
+    value: 0
+model_architecture:
+    value: MNISTClassifier
+num_rounds:
+    value: 2
+optimizer:
+    value: ""

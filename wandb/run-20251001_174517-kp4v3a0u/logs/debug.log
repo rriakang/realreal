@@ -1,0 +1,24 @@
+2025-10-01 17:45:17,673 INFO    MainThread:1294779 [wandb_init.py:setup_run_log_directory():686] Logging user logs to /home/ccl/Desktop/rirakang/realreal/wandb/run-20251001_174517-kp4v3a0u/logs/debug.log
+2025-10-01 17:45:17,673 INFO    MainThread:1294779 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to /home/ccl/Desktop/rirakang/realreal/wandb/run-20251001_174517-kp4v3a0u/logs/debug-internal.log
+2025-10-01 17:45:17,673 INFO    MainThread:1294779 [wandb_init.py:init():813] calling init triggers
+2025-10-01 17:45:17,673 INFO    MainThread:1294779 [wandb_init.py:init():818] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0, 'optimizer': '', 'dataset': '', 'model_architecture': '', 'batch_size': 0, 'epochs': 0, 'num_rounds': 0, '_wandb': {}}
+2025-10-01 17:45:17,673 INFO    MainThread:1294779 [wandb_init.py:init():861] starting backend
+2025-10-01 17:45:17,674 INFO    MainThread:1294779 [wandb_init.py:init():864] sending inform_init request
+2025-10-01 17:45:17,675 INFO    MainThread:1294779 [wandb_init.py:init():872] backend started and connected
+2025-10-01 17:45:17,682 INFO    MainThread:1294779 [wandb_init.py:init():942] updated telemetry
+2025-10-01 17:45:17,762 INFO    MainThread:1294779 [wandb_init.py:init():966] communicating run to backend with 90.0 second timeout
+2025-10-01 17:45:18,493 INFO    MainThread:1294779 [wandb_init.py:init():1017] starting run threads in backend
+2025-10-01 17:45:18,618 INFO    MainThread:1294779 [wandb_run.py:_console_start():2506] atexit reg
+2025-10-01 17:45:18,618 INFO    MainThread:1294779 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2025-10-01 17:45:18,618 INFO    MainThread:1294779 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2025-10-01 17:45:18,618 INFO    MainThread:1294779 [wandb_run.py:_redirect():2446] Redirects installed.
+2025-10-01 17:45:18,619 INFO    MainThread:1294779 [wandb_init.py:init():1057] run started, returning control to user process
+2025-10-01 17:45:20,920 INFO    ThreadPoolExecutor-0_0:1294779 [wandb_run.py:_config_callback():1392] config_cb None None {'batch_size': 128, 'epochs': 1, 'num_rounds': 2, 'hp_learning_rate': 0.00023327857978265264, 'hp_batch_size': 128, 'hp_local_epochs': 1}
+2025-10-01 17:45:34,102 INFO    ThreadPoolExecutor-0_0:1294779 [wandb_run.py:_config_callback():1392] config_cb None None {'batch_size': 32, 'epochs': 3, 'num_rounds': 2, 'hp_learning_rate': 0.0003615478541122683, 'hp_batch_size': 32, 'hp_local_epochs': 3}
+2025-10-01 17:45:56,214 INFO    MainThread:1294779 [wandb_run.py:_config_callback():1392] config_cb None None {'dataset': 'MNIST', 'model_architecture': 'MNISTClassifier'}
+2025-10-01 17:45:56,251 INFO    MainThread:1294779 [wandb_run.py:_finish():2272] finishing run rirakang123/MNIST_realreal/kp4v3a0u
+2025-10-01 17:45:56,253 INFO    MainThread:1294779 [wandb_run.py:_atexit_cleanup():2471] got exitcode: 0
+2025-10-01 17:45:56,255 INFO    MainThread:1294779 [wandb_run.py:_restore():2453] restore
+2025-10-01 17:45:56,255 INFO    MainThread:1294779 [wandb_run.py:_restore():2459] restore done
+2025-10-01 17:45:57,387 INFO    MainThread:1294779 [wandb_run.py:_footer_sync_info():3867] logging synced files

@@ -1,0 +1,129 @@
+[2025-10-01 17:30:30,514][root][INFO] - {"dataset": "MNIST", "start_execution_time": "2025-10-01 17:30:30", "client_id": 2, "num_clients": 3, "partition": "dirichlet:0.1", "seed": 42}
+[2025-10-01 17:30:30,620][data_preparation][INFO] - Saved partition to ./partitions/mnist_dirichlet_alpha0.1_clients3_seed42.json
+[2025-10-01 17:30:30,633][__main__][INFO] - data loaded
+[2025-10-01 17:30:30,656][__main__][INFO] - Latest Local Model download
+[2025-10-01 17:30:30,657][root][INFO] - downloaded local_model_name: MNISTClassifier_local_model_V1.pth
+[2025-10-01 17:30:30,671][root][INFO] - init model_type: Pytorch
+[2025-10-01 17:37:10,119][root][INFO] - bulid model
+[2025-10-01 17:37:10,119][root][INFO] - FL start
+[2025-10-01 17:37:10,128][fedops.client.client_api][INFO] - FL_server_IP:port - ccl.gachon.ac.kr:40035
+[2025-10-01 17:37:10,129][root][INFO] - FL learning ready
+[2025-10-01 17:37:10,129][root][INFO] - fl_task_id: realreal
+[2025-10-01 17:37:10,129][root][INFO] - dataset: MNIST
+[2025-10-01 17:37:10,129][root][INFO] - output_size: 10
+[2025-10-01 17:37:10,130][root][INFO] - validation_split: 0.2
+[2025-10-01 17:37:10,130][root][INFO] - model_type: Pytorch
+[2025-10-01 17:37:10,130][root][INFO] - wandb_key: 38f6cf3c2c37660d42ebfe8ab434b72d34be3b31
+[2025-10-01 17:37:10,130][root][INFO] - wandb_account: rirakang@gachon.ac.kr
+[2025-10-01 17:37:11,930][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[2025-10-01 17:37:11,931][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[2025-10-01 17:37:11,940][flwr][DEBUG] - Opened insecure gRPC connection (no certificates were passed)
+[2025-10-01 17:37:11,968][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2025-10-01 17:37:11,971][flwr][DEBUG] - ChannelConnectivity.CONNECTING
+[2025-10-01 17:37:11,973][flwr][DEBUG] - ChannelConnectivity.READY
+[2025-10-01 17:37:12,695][flwr][INFO] - 
+[2025-10-01 17:37:12,696][flwr][INFO] - Received: train message 5c800f93-cfe1-494f-9f1b-eb242fcd0bb3
+[2025-10-01 17:37:12,714][fedops.client.client_api][INFO] - [cluster-upsert] success (task_id=realreal, mac=f0:2f:74:96:d6:64, cluster_id=0)
+[2025-10-01 17:37:39,111][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 1, "gl_model_v": 2, "train_loss": 0.023639445224308102, "train_accuracy": 0.992074989348104, "train_f1_score": 0.992043683819393, "val_loss": 0.06322894346616838, "val_accuracy": 0.9822707125809751, "val_f1_score": 0.9825670641995372, "train_time": 26.392232179641724, "wandb_name": "ccl-y-server-v0(2025-10-01 17:30:30.672919)", "cluster_id": 0}
+[2025-10-01 17:37:39,177][flwr][INFO] - Sent reply
+[2025-10-01 17:37:44,938][flwr][INFO] - 
+[2025-10-01 17:37:44,940][flwr][INFO] - Received: evaluate message e6d8a9d7-0f92-4cbd-a4a8-f05a67863019
+[2025-10-01 17:37:46,663][fedops.client.client_fl][INFO] - test - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 1, "test_loss": 2.9348037423966806, "test_accuracy": 0.5628, "gl_model_v": 2, "wandb_name": "ccl-y-server-v0(2025-10-01 17:30:30.672919)"}
+[2025-10-01 17:37:46,675][flwr][INFO] - Sent reply
+[2025-10-01 17:38:18,508][flwr][INFO] - 
+[2025-10-01 17:38:18,509][flwr][INFO] - Received: evaluate message 0cb3251d-7b22-47d7-931d-7e833fe85fef
+[2025-10-01 17:38:20,211][fedops.client.client_fl][INFO] - test - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 2, "test_loss": 8.937795838223227, "test_accuracy": 0.5681, "gl_model_v": 2, "wandb_name": "ccl-y-server-v0(2025-10-01 17:30:30.672919)"}
+[2025-10-01 17:38:20,223][flwr][INFO] - Sent reply
+[2025-10-01 17:38:20,237][flwr][INFO] - 
+[2025-10-01 17:38:20,238][flwr][INFO] - Received: reconnect message 006b5ae7-1d89-495c-9ee3-ccb4c6583c14
+[2025-10-01 17:38:20,249][flwr][DEBUG] - gRPC channel closed
+[2025-10-01 17:38:20,250][flwr][INFO] - Disconnect and shut down
+[2025-10-01 17:38:20,253][root][INFO] - fl learning finished
+[2025-10-01 17:38:23,157][root][ERROR] - wandb system load error: Could not find project MNIST_realreal
+[2025-10-01 17:38:23,160][root][INFO] - client_operation_time - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "operation_time": 68.35868430137634, "gl_model_v": 2}
+[2025-10-01 17:38:23,174][root][INFO] - try notify_fin
+[2025-10-01 17:38:23,193][root][INFO] - trainFin
+[2025-10-01 17:38:23,194][root][INFO] - FL Client Learning Finish
+[2025-10-01 17:45:17,143][root][INFO] - bulid model
+[2025-10-01 17:45:17,143][root][INFO] - FL start
+[2025-10-01 17:45:17,152][fedops.client.client_api][INFO] - FL_server_IP:port - ccl.gachon.ac.kr:40035
+[2025-10-01 17:45:17,153][root][INFO] - FL learning ready
+[2025-10-01 17:45:17,153][root][INFO] - fl_task_id: realreal
+[2025-10-01 17:45:17,154][root][INFO] - dataset: MNIST
+[2025-10-01 17:45:17,154][root][INFO] - output_size: 10
+[2025-10-01 17:45:17,154][root][INFO] - validation_split: 0.2
+[2025-10-01 17:45:17,154][root][INFO] - model_type: Pytorch
+[2025-10-01 17:45:17,154][root][INFO] - wandb_key: 38f6cf3c2c37660d42ebfe8ab434b72d34be3b31
+[2025-10-01 17:45:17,154][root][INFO] - wandb_account: rirakang@gachon.ac.kr
+[2025-10-01 17:45:18,620][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[2025-10-01 17:45:18,621][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[2025-10-01 17:45:18,623][flwr][DEBUG] - Opened insecure gRPC connection (no certificates were passed)
+[2025-10-01 17:45:18,626][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2025-10-01 17:45:18,664][flwr][DEBUG] - ChannelConnectivity.READY
+[2025-10-01 17:45:20,902][flwr][INFO] - 
+[2025-10-01 17:45:20,903][flwr][INFO] - Received: train message 39f80caa-a732-4011-87a9-d496c01e4c2f
+[2025-10-01 17:45:20,918][fedops.client.client_api][INFO] - [cluster-upsert] success (task_id=realreal, mac=f0:2f:74:96:d6:64, cluster_id=0)
+[2025-10-01 17:45:25,975][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 1, "gl_model_v": 3, "train_loss": 0.13344307855257523, "train_accuracy": 0.9602897315722199, "train_f1_score": 0.9591443079221587, "val_loss": 0.14057072219641312, "val_accuracy": 0.9577224684623252, "val_f1_score": 0.9571845788978219, "train_time": 5.053813934326172, "wandb_name": "ccl-y-server-v0(2025-10-01 17:30:30.672919)", "cluster_id": 0}
+[2025-10-01 17:45:26,034][flwr][INFO] - Sent reply
+[2025-10-01 17:45:34,085][flwr][INFO] - 
+[2025-10-01 17:45:34,086][flwr][INFO] - Received: train message 29fba227-ba27-41e2-951c-fa2e196a2e7c
+[2025-10-01 17:45:34,101][fedops.client.client_api][INFO] - [cluster-upsert] success (task_id=realreal, mac=f0:2f:74:96:d6:64, cluster_id=0)
+[2025-10-01 17:45:46,459][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 1, "gl_model_v": 3, "train_loss": 0.009131370934839988, "train_accuracy": 0.9976991904559012, "train_f1_score": 0.9976799598250894, "val_loss": 0.031677704679010356, "val_accuracy": 0.9897715649505625, "val_f1_score": 0.9897326491934463, "train_time": 12.355767011642456, "wandb_name": "ccl-y-server-v0(2025-10-01 17:30:30.672919)", "cluster_id": 0}
+[2025-10-01 17:45:46,496][flwr][INFO] - Sent reply
+[2025-10-01 17:45:56,195][flwr][INFO] - 
+[2025-10-01 17:45:56,196][flwr][INFO] - Received: reconnect message 09b08f78-9c5d-4bb5-ab86-a052e0430922
+[2025-10-01 17:45:56,202][flwr][DEBUG] - gRPC channel closed
+[2025-10-01 17:45:56,210][flwr][INFO] - Disconnect and shut down
+[2025-10-01 17:45:56,212][root][INFO] - fl learning finished
+[2025-10-01 17:45:59,081][root][ERROR] - wandb system load error: Could not find project MNIST_realreal
+[2025-10-01 17:45:59,083][root][INFO] - client_operation_time - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "operation_time": 37.59438228607178, "gl_model_v": 3}
+[2025-10-01 17:45:59,096][root][INFO] - try notify_fin
+[2025-10-01 17:45:59,115][root][INFO] - trainFin
+[2025-10-01 17:45:59,116][root][INFO] - FL Client Learning Finish
+[2025-10-01 17:47:50,924][root][INFO] - ccl-y-server;f0:2f:74:96:d6:64-client close
