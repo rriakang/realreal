@@ -288,9 +288,10 @@ def build_or_load_partitions(train_ds, num_clients: int, mode: str, params: Dict
 # Pytorch version
 def load_partition(dataset: str, validation_split: float, batch_size: int):
   
-    # now_str = datetime.now()
-    # now_str = now.strftime('%Y-%m-%d %H:%M:%S')
-    now_str = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    
+    from datetime import datetime  # 파일 상단
+    now_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
 
     logging.info(json.dumps({"dataset": dataset, "start_execution_time": now_str,
                              "client_id": CLIENT_ID, "num_clients": NUM_CLIENTS,
