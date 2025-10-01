@@ -200,7 +200,7 @@ def partition_label_skew(targets: np.ndarray, num_clients: int, n_labels_per_cli
 
 def partition_quantity_skew(targets: np.ndarray, num_clients: int, beta: float = 0.5) -> List[List[int]]:
     #
-    각 클라이언트가 데이터 개수 자체가 다르게 되도록(수량 편향). beta↓ → 편차↑
+    # 각 클라이언트가 데이터 개수 자체가 다르게 되도록(수량 편향). beta↓ → 편차↑
     
     all_idxs = np.arange(len(targets))
     np.random.shuffle(all_idxs)
