@@ -1,0 +1,61 @@
+[2025-09-30 23:52:54,628][root][INFO] - FL_Task - {"dataset": "MNIST", "start_execution_time": "2025-09-30 23:52:54"}
+[2025-09-30 23:52:54,897][__main__][INFO] - data loaded
+[2025-09-30 23:52:54,962][root][INFO] - init model_type: Pytorch
+[2025-09-30 23:56:05,311][root][INFO] - bulid model
+[2025-09-30 23:56:05,312][root][INFO] - FL start
+[2025-09-30 23:56:05,325][fedops.client.client_api][INFO] - FL_server_IP:port - ccl.gachon.ac.kr:40032
+[2025-09-30 23:56:05,327][root][INFO] - FL learning ready
+[2025-09-30 23:56:05,328][root][INFO] - fl_task_id: realreal
+[2025-09-30 23:56:05,328][root][INFO] - dataset: MNIST
+[2025-09-30 23:56:05,328][root][INFO] - output_size: 10
+[2025-09-30 23:56:05,328][root][INFO] - validation_split: 0.2
+[2025-09-30 23:56:05,328][root][INFO] - model_type: Pytorch
+[2025-09-30 23:56:05,328][root][INFO] - wandb_key: 38f6cf3c2c37660d42ebfe8ab434b72d34be3b31
+[2025-09-30 23:56:05,328][root][INFO] - wandb_account: rirakang@gachon.ac.kr
+[2025-09-30 23:56:07,884][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[2025-09-30 23:56:07,892][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[2025-09-30 23:56:07,971][flwr][DEBUG] - Opened insecure gRPC connection (no certificates were passed)
+[2025-09-30 23:56:07,974][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2025-09-30 23:56:07,975][flwr][DEBUG] - ChannelConnectivity.CONNECTING
+[2025-09-30 23:56:07,991][flwr][DEBUG] - ChannelConnectivity.READY
+[2025-09-30 23:56:11,567][flwr][INFO] - 
+[2025-09-30 23:56:11,571][flwr][INFO] - Received: train message b875ba2e-9fb3-4832-bbd0-3b6f8cc5a73a
+[2025-09-30 23:56:11,988][fedops.client.client_api][INFO] - [cluster-upsert] success (task_id=realreal, mac=f0:2f:74:96:d6:64, cluster_id=0)
+[2025-09-30 23:56:55,183][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 1, "gl_model_v": 1, "train_loss": 0.01911482607065667, "train_accuracy": 0.9945555555555555, "train_f1_score": 0.9945576994594592, "val_loss": 0.03395974226395025, "val_accuracy": 0.9900833333333333, "val_f1_score": 0.9900844701135846, "train_time": 43.18931436538696, "wandb_name": "ccl-y-server-v0(2025-09-30 23:52:54.966020)", "cluster_id": 0}
+[2025-09-30 23:56:55,325][flwr][INFO] - Sent reply
+[2025-09-30 23:56:59,862][flwr][INFO] - 
+[2025-09-30 23:56:59,874][flwr][INFO] - Received: evaluate message 8fe26b43-ccf9-4e62-9321-43ab51b29065
+[2025-09-30 23:57:03,012][fedops.client.client_fl][INFO] - test - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 1, "test_loss": 0.04154198992739808, "test_accuracy": 0.9865833333333334, "gl_model_v": 1, "wandb_name": "ccl-y-server-v0(2025-09-30 23:52:54.966020)"}
+[2025-09-30 23:57:03,076][flwr][INFO] - Sent reply
+[2025-09-30 23:57:03,911][flwr][INFO] - 
+[2025-09-30 23:57:03,914][flwr][INFO] - Received: train message 9ab1b033-283b-4c5c-86af-3764f4074229
+[2025-09-30 23:57:03,945][fedops.client.client_api][INFO] - [cluster-upsert] success (task_id=realreal, mac=f0:2f:74:96:d6:64, cluster_id=0)
+[2025-10-01 00:00:38,501][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 2, "gl_model_v": 1, "train_loss": 0.05657356515102447, "train_accuracy": 0.9825555555555555, "train_f1_score": 0.9825344922123481, "val_loss": 0.0762425312782301, "val_accuracy": 0.97675, "val_f1_score": 0.9767258820854448, "train_time": 214.5507583618164, "wandb_name": "ccl-y-server-v0(2025-09-30 23:52:54.966020)", "cluster_id": 0}
+[2025-10-01 00:00:38,642][flwr][INFO] - Sent reply
+[2025-10-01 00:01:52,041][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2025-10-01 00:01:52,246][flwr][DEBUG] - gRPC channel closed
+[2025-10-01 00:01:52,280][root][INFO] - notify_fail start
+[2025-10-01 00:01:52,316][root][ERROR] - trainFin

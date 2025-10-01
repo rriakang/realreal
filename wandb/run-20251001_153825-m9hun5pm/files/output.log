@@ -1,0 +1,104 @@
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated.
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below:
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+
+[2025-10-01 15:38:26,800][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated.
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below:
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+
+[2025-10-01 15:38:26,802][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+
+[2025-10-01 15:38:26,840][flwr][DEBUG] - Opened insecure gRPC connection (no certificates were passed)
+[2025-10-01 15:38:26,844][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2025-10-01 15:38:26,846][flwr][DEBUG] - ChannelConnectivity.CONNECTING
+[2025-10-01 15:38:26,848][flwr][DEBUG] - ChannelConnectivity.READY
+[92mINFO [0m:
+[2025-10-01 15:38:27,552][flwr][INFO] -
+[92mINFO [0m:      Received: train message 573baf9e-f61c-4a66-99d3-2e8b3e6865f5
+[2025-10-01 15:38:27,553][flwr][INFO] - Received: train message 573baf9e-f61c-4a66-99d3-2e8b3e6865f5
+[2025-10-01 15:38:27,570][fedops.client.client_api][INFO] - [cluster-upsert] success (task_id=realreal, mac=f0:2f:74:96:d6:64, cluster_id=0)
+Starting evalutation...
+Testing: 100%|████████████████████████████████████████████████| 4500/4500 [00:08<00:00, 521.98batch/s]
+Starting evalutation...
+Testing: 100%|█████████████████████████████████████████████████████| 94/94 [00:01<00:00, 48.87batch/s]
+[2025-10-01 15:39:48,124][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 1, "gl_model_v": 1, "train_loss": 0.030068738510461924, "train_accuracy": 0.9913611111111111, "train_f1_score": 0.9913638798880934, "val_loss": 0.04148824015097256, "val_accuracy": 0.9876666666666667, "val_f1_score": 0.987668780709328, "train_time": 80.5503180027008, "wandb_name": "ccl-y-server-v0(2025-10-01 15:35:18.010659)", "cluster_id": 0}
+[92mINFO [0m:      Sent reply
+[2025-10-01 15:39:48,195][flwr][INFO] - Sent reply
+[92mINFO [0m:
+[2025-10-01 15:39:53,106][flwr][INFO] -
+[92mINFO [0m:      Received: evaluate message 7901becc-50d4-472a-97d4-56574f580779
+[2025-10-01 15:39:53,107][flwr][INFO] - Received: evaluate message 7901becc-50d4-472a-97d4-56574f580779
+Starting evalutation...
+Testing: 100%|█████████████████████████████████████████████████████| 94/94 [00:01<00:00, 49.26batch/s]
+[2025-10-01 15:39:55,047][fedops.client.client_fl][INFO] - test - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 1, "test_loss": 0.047163469751583455, "test_accuracy": 0.9855, "gl_model_v": 1, "wandb_name": "ccl-y-server-v0(2025-10-01 15:35:18.010659)"}
+[92mINFO [0m:      Sent reply
+[2025-10-01 15:39:55,057][flwr][INFO] - Sent reply
+[92mINFO [0m:
+[2025-10-01 15:39:56,168][flwr][INFO] -
+[92mINFO [0m:      Received: train message 858a01ec-2ab2-4b33-a7e4-a161441b90d6
+[2025-10-01 15:39:56,169][flwr][INFO] - Received: train message 858a01ec-2ab2-4b33-a7e4-a161441b90d6
+[2025-10-01 15:39:56,187][fedops.client.client_api][INFO] - [cluster-upsert] success (task_id=realreal, mac=f0:2f:74:96:d6:64, cluster_id=0)
+Starting evalutation...
+Testing: 100%|████████████████████████████████████████████████| 1125/1125 [00:06<00:00, 183.57batch/s]
+Starting evalutation...
+Testing: 100%|█████████████████████████████████████████████████████| 94/94 [00:01<00:00, 51.81batch/s]
+[2025-10-01 15:40:13,922][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 2, "gl_model_v": 1, "train_loss": 0.041196776419955616, "train_accuracy": 0.98725, "train_f1_score": 0.9872432741926972, "val_loss": 0.06007179139340495, "val_accuracy": 0.9826666666666667, "val_f1_score": 0.9826492179487659, "train_time": 17.73108410835266, "wandb_name": "ccl-y-server-v0(2025-10-01 15:35:18.010659)", "cluster_id": 0}
+[92mINFO [0m:      Sent reply
+[2025-10-01 15:40:13,982][flwr][INFO] - Sent reply
+[92mINFO [0m:
+[2025-10-01 15:40:19,277][flwr][INFO] -
+[92mINFO [0m:      Received: evaluate message cb3f49b2-06a3-4507-8e37-1ca9975525f8
+[2025-10-01 15:40:19,277][flwr][INFO] - Received: evaluate message cb3f49b2-06a3-4507-8e37-1ca9975525f8
+Starting evalutation...
+Testing: 100%|█████████████████████████████████████████████████████| 94/94 [00:01<00:00, 52.42batch/s]
+[2025-10-01 15:40:21,100][fedops.client.client_fl][INFO] - test - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 2, "test_loss": 0.04784720268675146, "test_accuracy": 0.9855833333333334, "gl_model_v": 1, "wandb_name": "ccl-y-server-v0(2025-10-01 15:35:18.010659)"}
+[92mINFO [0m:      Sent reply
+[2025-10-01 15:40:21,111][flwr][INFO] - Sent reply
+[92mINFO [0m:
+[2025-10-01 15:40:21,353][flwr][INFO] -
+[92mINFO [0m:      Received: reconnect message 99de255b-af69-4b6a-9191-a840e99ba1bb
+[2025-10-01 15:40:21,354][flwr][INFO] - Received: reconnect message 99de255b-af69-4b6a-9191-a840e99ba1bb
+[2025-10-01 15:40:21,358][flwr][DEBUG] - gRPC channel closed
+[92mINFO [0m:      Disconnect and shut down
+[2025-10-01 15:40:21,359][flwr][INFO] - Disconnect and shut down
+[2025-10-01 15:40:21,361][root][INFO] - fl learning finished

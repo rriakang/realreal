@@ -1,0 +1,329 @@
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated.
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below:
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+
+[2025-09-30 23:56:07,884][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated.
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below:
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+
+[32mINFO[0m:     127.0.0.1:46828 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+
+[2025-09-30 23:56:07,892][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+
+[2025-09-30 23:56:07,971][flwr][DEBUG] - Opened insecure gRPC connection (no certificates were passed)
+[2025-09-30 23:56:07,974][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2025-09-30 23:56:07,975][flwr][DEBUG] - ChannelConnectivity.CONNECTING
+[2025-09-30 23:56:07,991][flwr][DEBUG] - ChannelConnectivity.READY
+[92mINFO [0m:
+[2025-09-30 23:56:11,567][flwr][INFO] -
+[92mINFO [0m:      Received: train message b875ba2e-9fb3-4832-bbd0-3b6f8cc5a73a
+[2025-09-30 23:56:11,571][flwr][INFO] - Received: train message b875ba2e-9fb3-4832-bbd0-3b6f8cc5a73a
+[2025-09-30 23:56:11,988][fedops.client.client_api][INFO] - [cluster-upsert] success (task_id=realreal, mac=f0:2f:74:96:d6:64, cluster_id=0)
+Starting evalutation...
+Testing: 100%|███████████████████████████████████████████████| 282/282 [00:09<00:00, 30.99batch/s]
+Starting evalutation...
+Testing: 100%|█████████████████████████████████████████████████| 94/94 [00:03<00:00, 26.54batch/s]
+[2025-09-30 23:56:55,183][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 1, "gl_model_v": 1, "train_loss": 0.01911482607065667, "train_accuracy": 0.9945555555555555, "train_f1_score": 0.9945576994594592, "val_loss": 0.03395974226395025, "val_accuracy": 0.9900833333333333, "val_f1_score": 0.9900844701135846, "train_time": 43.18931436538696, "wandb_name": "ccl-y-server-v0(2025-09-30 23:52:54.966020)", "cluster_id": 0}
+[92mINFO [0m:      Sent reply
+[2025-09-30 23:56:55,325][flwr][INFO] - Sent reply
+[92mINFO [0m:
+[2025-09-30 23:56:59,862][flwr][INFO] -
+[92mINFO [0m:      Received: evaluate message 8fe26b43-ccf9-4e62-9321-43ab51b29065
+[2025-09-30 23:56:59,874][flwr][INFO] - Received: evaluate message 8fe26b43-ccf9-4e62-9321-43ab51b29065
+Starting evalutation...
+Testing: 100%|█████████████████████████████████████████████████| 94/94 [00:02<00:00, 34.64batch/s]
+[2025-09-30 23:57:03,012][fedops.client.client_fl][INFO] - test - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 1, "test_loss": 0.04154198992739808, "test_accuracy": 0.9865833333333334, "gl_model_v": 1, "wandb_name": "ccl-y-server-v0(2025-09-30 23:52:54.966020)"}
+[92mINFO [0m:      Sent reply
+[2025-09-30 23:57:03,076][flwr][INFO] - Sent reply
+[92mINFO [0m:
+[2025-09-30 23:57:03,911][flwr][INFO] -
+[92mINFO [0m:      Received: train message 9ab1b033-283b-4c5c-86af-3764f4074229
+[2025-09-30 23:57:03,914][flwr][INFO] - Received: train message 9ab1b033-283b-4c5c-86af-3764f4074229
+[2025-09-30 23:57:03,945][fedops.client.client_api][INFO] - [cluster-upsert] success (task_id=realreal, mac=f0:2f:74:96:d6:64, cluster_id=0)
+Starting evalutation...
+Testing: 100%|████████████████████████████████████████████| 4500/4500 [00:20<00:00, 223.53batch/s]
+Starting evalutation...
+Testing: 100%|█████████████████████████████████████████████████| 94/94 [00:02<00:00, 40.97batch/s]
+[2025-10-01 00:00:38,501][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "realreal", "client_mac": "f0:2f:74:96:d6:64", "client_name": "ccl-y-server", "round": 2, "gl_model_v": 1, "train_loss": 0.05657356515102447, "train_accuracy": 0.9825555555555555, "train_f1_score": 0.9825344922123481, "val_loss": 0.0762425312782301, "val_accuracy": 0.97675, "val_f1_score": 0.9767258820854448, "train_time": 214.5507583618164, "wandb_name": "ccl-y-server-v0(2025-09-30 23:52:54.966020)", "cluster_id": 0}
+[92mINFO [0m:      Sent reply
+[2025-10-01 00:00:38,642][flwr][INFO] - Sent reply
+[2025-10-01 00:01:52,041][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2025-10-01 00:01:52,246][flwr][DEBUG] - gRPC channel closed
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/ccl/Desktop/rirakang/realreal/fedops/client/app.py", line 144, in fl_client_start
+    await loop.run_in_executor(None, client_start)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/app.py", line 624, in start_numpy_client
+    start_client(
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/app.py", line 183, in start_client
+    start_client_internal(
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/app.py", line 394, in start_client_internal
+    message = receive()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/grpc_client/connection.py", line 142, in receive
+    proto = next(server_message_iterator)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/grpc/_channel.py", line 543, in __next__
+    return self._next()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/grpc/_channel.py", line 972, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:192.9.201.228:40032 {grpc_status:14, grpc_message:"Socket closed"}"
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/logging/__init__.py", line 1083, in emit
+    msg = self.format(record)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/logging/__init__.py", line 927, in format
+    return fmt.format(record)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/logging/__init__.py", line 663, in format
+    record.message = record.getMessage()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/logging/__init__.py", line 367, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/background.py", line 27, in __call__
+    await self.func(*self.args, **self.kwargs)
+  File "/home/ccl/Desktop/rirakang/realreal/fedops/client/app.py", line 201, in fl_client_start
+    logging.info('[E][PC0002] learning', e)
+Message: '[E][PC0002] learning'
+Arguments: (<_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:192.9.201.228:40032 {grpc_status:14, grpc_message:"Socket closed"}"
+>,)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/ccl/Desktop/rirakang/realreal/fedops/client/app.py", line 144, in fl_client_start
+    await loop.run_in_executor(None, client_start)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/app.py", line 624, in start_numpy_client
+    start_client(
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/app.py", line 183, in start_client
+    start_client_internal(
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/app.py", line 394, in start_client_internal
+    message = receive()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/grpc_client/connection.py", line 142, in receive
+    proto = next(server_message_iterator)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/grpc/_channel.py", line 543, in __next__
+    return self._next()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/grpc/_channel.py", line 972, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:192.9.201.228:40032 {grpc_status:14, grpc_message:"Socket closed"}"
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/logging/__init__.py", line 1083, in emit
+    msg = self.format(record)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/logging/__init__.py", line 927, in format
+    return fmt.format(record)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/logging/__init__.py", line 663, in format
+    record.message = record.getMessage()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/logging/__init__.py", line 367, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/background.py", line 27, in __call__
+    await self.func(*self.args, **self.kwargs)
+  File "/home/ccl/Desktop/rirakang/realreal/fedops/client/app.py", line 201, in fl_client_start
+    logging.info('[E][PC0002] learning', e)
+Message: '[E][PC0002] learning'
+Arguments: (<_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:192.9.201.228:40032 {grpc_status:14, grpc_message:"Socket closed"}"
+>,)
+[2025-10-01 00:01:52,280][root][INFO] - notify_fail start
+[2025-10-01 00:01:52,316][root][ERROR] - trainFin
+[31mERROR[0m:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/fastapi/applications.py", line 1082, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await response(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/responses.py", line 168, in __call__
+    await self.background()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/background.py", line 42, in __call__
+    await task()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/starlette/background.py", line 27, in __call__
+    await self.func(*self.args, **self.kwargs)
+  File "/home/ccl/Desktop/rirakang/realreal/fedops/client/app.py", line 204, in fl_client_start
+    raise e
+  File "/home/ccl/Desktop/rirakang/realreal/fedops/client/app.py", line 144, in fl_client_start
+    await loop.run_in_executor(None, client_start)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/app.py", line 624, in start_numpy_client
+    start_client(
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/app.py", line 183, in start_client
+    start_client_internal(
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/app.py", line 394, in start_client_internal
+    message = receive()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/flwr/compat/client/grpc_client/connection.py", line 142, in receive
+    proto = next(server_message_iterator)
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/grpc/_channel.py", line 543, in __next__
+    return self._next()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/grpc/_channel.py", line 972, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:192.9.201.228:40032 {grpc_status:14, grpc_message:"Socket closed"}"
+>
+[32mINFO[0m:     127.0.0.1:58036 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45228 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45230 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42460 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:33786 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:33792 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:35916 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:53196 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:53204 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39584 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:50610 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:50626 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:54696 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:54708 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:41944 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:40240 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:40252 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:53538 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39466 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39474 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:47684 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:58424 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:58440 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:40554 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:59542 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:59550 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:46806 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:41764 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:41780 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:46198 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:46626 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:46638 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:35962 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:57178 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:57188 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:47274 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:44320 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:44334 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:38376 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:52290 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:52294 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:51498 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:36828 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:36844 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45796 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39962 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39974 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:57502 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:57508 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45288 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56638 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56648 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:41144 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:55570 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:55582 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42172 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:33526 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:33534 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39364 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:58388 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:58392 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:34126 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45014 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45022 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:47350 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:57468 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:57472 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:40582 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:44908 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42560 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:40738 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42912 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:53818 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:35572 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:58006 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:47344 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:47352 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:35572 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:52760 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:52324 - "[1mGET /online HTTP/1.1[0m" [32m200 OK[0m
